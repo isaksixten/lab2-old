@@ -1,4 +1,9 @@
 import org.junit.jupiter.api.*;
+
+import Model.Car;
+import Model.Saab95;
+import Model.VolvoFM9;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CarTransportTest{
@@ -52,7 +57,7 @@ public class CarTransportTest{
     @Test
     public void cannotLoadWhileDistanceTooLong() {
         TestCar1.startEngine();
-        for (int i = 0; i < 6; i++){
+        for (int i = 0; i < 60; i++){
             TestCar1.gas(1);
         }
         TestCar1.move();

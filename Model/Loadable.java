@@ -1,6 +1,7 @@
+package Model;
 import java.util.Deque;
 
-public interface Loadable<T extends ObjectWithPosition>{ //Loadable objects can load and unload a generic type T.
+public interface Loadable<T extends DrawableWithPosition>{ //Loadable objects can load and unload a generic type T.
     public void load(T vehicle); 
     public T unload();
     double[] getCurrentPos();

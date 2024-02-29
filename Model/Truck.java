@@ -1,3 +1,4 @@
+package Model;
 import java.awt.*;
 
 abstract class Truck extends Vehicle implements TiltablePosterior{
